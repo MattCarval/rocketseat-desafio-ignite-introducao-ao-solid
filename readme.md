@@ -65,17 +65,12 @@ Para esse desafio, temos os seguintes testes:
 
 ```json
 {
-	id: string;
-
-  name: string;
-
-  admin: boolean;
-
-  email: string;
-
-  created_at: Date;
-
-  updated_at: Date;
+  "id": "string",
+  "name": "string",
+  "admin": "boolean",
+  "email": "string",
+  "created_at": "Date",
+  "updated_at": "Date"
 }
 ```
 
@@ -141,6 +136,7 @@ Para que esses testes passem, você deve fazer alterações em todos os controll
 </aside>
 
 - **Rota - [POST] /users**
+
   - **Should be able to create new users**
     Para que esse teste passe, usando o useCase apropriado, você deve permitir que a rota crie um usuário e retorne um status `201` junto ao objeto do usuário criado.
   - **Should not be able to create new users when email is already taken**
